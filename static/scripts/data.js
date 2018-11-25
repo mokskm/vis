@@ -44,17 +44,17 @@ function getPrediction() {
 		//TODO: run ML model to get top 25 rankings prediction.
 	}
 	else {
-		prediction = ["Alabama", "Michigan", "Clemson", "NotreDame", "Georgia", "unknown", "unknown","Oklahoma","unknown","unknown",
-		"OhioState","UCF","Florida","Texas","unknown","unknown","Utah","LSU","unknown","unknown","unknown","unknown","unknown",
+		prediction = ["Alabama", "Michigan", "Clemson", "NotreDame", "Georgia", "questionmark", "questionmark","Oklahoma","questionmark","questionmark",
+		"OhioState","UCF","Florida","Texas","questionmark","questionmark","Utah","LSU","questionmark","questionmark","questionmark","questionmark","questionmark",
 	    "Syracuse","IowaState"]
 	}
 	return prediction;
 }
 
-function getUnknownPrediction() {
+function getquestionmarkPrediction() {
 	prediction = []
 	for (var i=0; i<25; i++) 
-		prediction.push("unknown");
+		prediction.push("questionmark");
 	return prediction;
 }
 
