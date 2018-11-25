@@ -51,7 +51,7 @@ function getPrediction() {
 	return prediction;
 }
 
-function getquestionmarkPrediction() {
+function getUnknownPrediction() {
 	prediction = []
 	for (var i=0; i<25; i++) 
 		prediction.push("questionmark");
